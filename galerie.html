@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>KaisenCares</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
+		
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="css/icomoon.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- Superfish -->
+		<link rel="stylesheet" href="css/superfish.css">
+
+		<link rel="stylesheet" href="css/style.css">
+	
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Bootsrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!-- PrettyPhoto -->
+        <link rel="stylesheet" href="assets/css/prettyPhoto.css">
+
+        <!-- Template main Css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!-- Modernizr -->
+        <script src="assets/js/modernizr-2.6.2.min.js"></script>
+
+
+
+		<!-- Modernizr JS -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+
+		<style>
+			/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+		</style>
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 text-left fh5co-link">
+						<a href="#">FAQ</a>
+						<a href="#">Forum</a>
+						<a href="#">Contact</a>
+					</div>
+					<div class="col-md-6 col-sm-6 text-right fh5co-social">
+						<a href="#" class="grow"><i class="icon-facebook2"></i></a>
+						<a href="#" class="grow"><i class="icon-twitter2"></i></a>
+						<a href="#" class="grow"><i class="icon-instagram2"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo"><a href="index.html">
+						<img src="images/Logo2.png" alt="fff">
+						Kaisen Cares</a></h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="about.html">A propos</a></li>
+							<li><a href="causes.html">Causes</a></li>
+							<li class="active"><a href="galerie.html">Galerie</a></li>
+							<li ><a href="contact.html">Contact</a></li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+
+		</header>
+
+
+
+
+
+		<div class="container">
+
+			
+		
+			<div class="gallery">
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/1.jpeg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/2.jpg" alt="sunset behind San Francisco city skyline">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/3.jpeg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/4.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/5.jpeg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/6.jpeg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+				</div>
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/7.jpeg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/8.jpg" alt="sunset behind San Francisco city skyline">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/9.jpeg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/10.jpeg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/11.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+				</div>
+		
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/12.jpeg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+				</div>
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/13.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+				</div>
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/14.jpeg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+				</div>
+				<div class="gallery-item">
+					<img class="gallery-image" src="images/15.jpeg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+				</div>
+		
+			</div>
+		
+		</div>
+		
+		
+
+	
+		
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icons">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2023 KaisenCares <a href="#">Charity</a>. All Rights Reserved. 
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+		
+
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/sticky.js"></script>
+
+		<!-- Stellar -->
+		<script src="js/jquery.stellar.min.js"></script>
+		<!-- Superfish -->
+		<script src="js/hoverIntent.js"></script>
+		<script src="js/superfish.js"></script>
+
+		<!-- Google Map -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+		<script src="js/google_map.js"></script>
+		
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
+
